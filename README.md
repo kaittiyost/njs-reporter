@@ -1,7 +1,8 @@
 
 # NJS-Reporter
 
-For generating reports from grafana dashboards developed with NodeJS.
+For generating reports from grafana dashboards developed with NodeJS
+And customize the report format with simple HTML.
 
 ## Grafana requires
 
