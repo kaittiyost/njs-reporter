@@ -56,9 +56,8 @@ You can add any html code inside the center tag.
 ### be careful !!
 - You need an element id="allgraph" to display the graph from grafana.
 
-After adjusting to satisfaction Open your web browser and go to http:localhost:3001/
-
-After you've customized it to your satisfaction. Just press Ctrl+p to easily save it as a pdf file.
+After you've customized it to your satisfaction. Open your web browser and go to http://localhost:3001/
+and just press Ctrl+p to easily save it as a pdf file.
 
 ### enjoy :)
 
