@@ -4,12 +4,12 @@ const app = express()
 const path = require("path")
 
 const GrafanaConfig = require('./config.json')
-const subProcess = require('child_process')
+const subProcess = require('child_process');
+const { log } = require('console');
 
 app.set('view engine','ejs')
 let assetsDir = path.join(__dirname,"assets")
 app.use('/assets',express.static(assetsDir))
-
 
 app.get('/getDashboard',(req,res)=>{
 
@@ -44,6 +44,14 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
-app.listen(port, ()=>{
-    console.log('Server is runing on port '+port);
+app.listen(port, ()=>{ 
+  console.log(`
+███╗░░██╗░░░░░██╗░██████╗░░░░░░██████╗░███████╗██████╗░░█████╗░██████╗░████████╗███████╗██████╗░
+████╗░██║░░░░░██║██╔════╝░░░░░░██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗
+██╔██╗██║░░░░░██║╚█████╗░█████╗██████╔╝█████╗░░██████╔╝██║░░██║██████╔╝░░░██║░░░█████╗░░██████╔╝
+██║╚████║██╗░░██║░╚═══██╗╚════╝██╔══██╗██╔══╝░░██╔═══╝░██║░░██║██╔══██╗░░░██║░░░██╔══╝░░██╔══██╗
+██║░╚███║╚█████╔╝██████╔╝░░░░░░██║░░██║███████╗██║░░░░░╚█████╔╝██║░░██║░░░██║░░░███████╗██║░░██║
+╚═╝░░╚══╝░╚════╝░╚═════╝░░░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝╚═╝░░╚═╝
+  `);
+  console.log('Server is runing on port '+port);
 })
