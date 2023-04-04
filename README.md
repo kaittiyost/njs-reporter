@@ -7,11 +7,15 @@ For generating reports from grafana dashboards developed with NodeJS.
 
 - The plugin grafana-image-renderer 
 
-Step1 : config file grafana.ini as follows: 
+Step0 : config file grafana.ini as follows: 
 ```bash
     allow_embedding = true
     [auth.anonymous]
     enabled = true
+```
+Step1 : Clone NJS-Reporter: 
+```bash
+    git clone https://github.com/kaittiyost/njs-reporter.git
 ```
 Step2 : edit file config.json and enter the content as below
 ```bash
