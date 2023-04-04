@@ -57,7 +57,13 @@ You can add any html code inside the center tag.
 ### be careful !!
 - You need an element id="allgraph" to display the graph from grafana.
 
-After you've customized it to your satisfaction. Open your web browser and go to http://localhost:3001/
+#### Start the service
+
+```bash
+  npm run start
+```
+
+After you've customized it to your satisfaction and run service. Open your web browser and go to http://localhost:3001/
 and just press Ctrl+p to easily save it as a pdf file.
 
 ### enjoy :)
