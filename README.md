@@ -7,7 +7,7 @@ For generating reports from grafana dashboards developed with NodeJS.
 
 - The plugin grafana-image-renderer 
 
-Step0 : config file grafana.ini as follows: 
+Step0 : config file grafana.ini or default file as follows: 
 ```bash
     allow_embedding = true
     [auth.anonymous]
