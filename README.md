@@ -3,7 +3,10 @@
 
 For generating reports from grafana dashboards developed with NodeJS.
 
-## Grafana needs
+## Grafana requires
+
+- The plugin grafana-image-renderer 
+
 Step1 : config file grafana.ini as follows: 
 ```bash
     allow_embedding = true
