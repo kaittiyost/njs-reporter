@@ -6,6 +6,7 @@ For generating reports from grafana dashboards developed with NodeJS.
 ## Grafana requires
 
 - The plugin grafana-image-renderer 
+- API keys
 
 Step0 : config file grafana.ini or default file as follows: 
 ```bash
