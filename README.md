@@ -13,7 +13,7 @@ Step1 : config file grafana.ini as follows:
     [auth.anonymous]
     enabled = true
 ```
-Step2 : create file config.json and enter the content as below
+Step2 : edit file config.json and enter the content as below
 ```bash
 {
     "GRAFANA_API_KEY" : "<Your API_KEY>",
@@ -34,4 +34,20 @@ example :
     "DASHBOARD_UID" : "AXJFGLDVk"
 }
 ```
+## Custom templete pdf
+
+You can edit the views/index.js file to customize the style of the report with your HTML writing skills.
+```bash
+<center>
+    <h3>NJS-Reporter</h3>
+    <!-- Graph Here  -->
+    <div id="allgraph"></div>
+</center>
+```
+You can add any html code inside the <center> tag.
+
+After you've customized it to your satisfaction. Just press Ctrl+p to easily save it as a pdf file.
+
+### enjoy :)
+
 
