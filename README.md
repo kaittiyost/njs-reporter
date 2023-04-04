@@ -14,6 +14,8 @@ Step0 : config file grafana.ini or default file as follows:
     [auth.anonymous]
     enabled = true
 ```
+and restart Grafana services__
+
 Step1 : Clone NJS-Reporter: 
 ```bash
     git clone https://github.com/kaittiyost/njs-reporter.git
